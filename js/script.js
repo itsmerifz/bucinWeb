@@ -11,7 +11,7 @@ function getNama(){
 
 function timeoutData() {
     setTimeout(function(){
-        window.location.href = "api.whatsapp.com";
+        window.location.href = "https://api.whatsapp.com";
     },82000)
 }
 

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="https://gamepedia.cursecdn.com/minecraft_gamepedia/a/a7/Heart.svg?version=dac1a46352ab4c25ad78a3cef0ceea86">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <title>Just 4U :)</title>
+  </head>
+  <body>
+    <!-- Animation -->
+    <div class="anim-bg">
+      <ul class="box">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <!-- Main -->
+    
+    <div class="main">
+      <span id="jujur"></span>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        var namakamu = localStorage.getItem('nama');
+        // var i = 0;
+        // var txt = 'Heyoo '+ namakamu + '.' + ' Aku mau ngomong serius nih yak, sebenernya dari awal aku udah suka sama kamu dari pertama kali liat. ';
+        // var speedType = 100;
+
+        // function typeWriter(){
+        //   if(i < txt.length){
+        //     document.getElementById("jujur").innerHTML += txt.charAt(i);
+        //     i++;
+        //     setTimeout(typeWriter,speedType);
+        //   }
+        // }
+
+        var x = new Typed('#jujur',{
+          strings : ['Heyoo '+namakamu+'.',
+                     'Aku mau ngomong serius nih yak',
+                     'Sebenernya dari awal aku udah suka sama kamu',
+                     'Dari pertama kali ngobrol',
+                     'Aku udah ngerasa nyaman juga',
+                     'Sering becanda',
+                     'Kadang obrolannya gak jelas pula',
+                     'Banyak deh wkwkwk',
+                     'Tapi aku kadang ngungkapin perasaan ke orang masih rada malu sih hehe',
+                     'Jadinya aku pake ini aja dah wkwk',
+                     'Jadi....',
+                     'Kamu mau gak sama aku ? jawab di WhatsApp aja deh wkwk ' ],
+          typeSpeed : 150,
+          delaySpeed : 300,
+          backSpeed : 50,
+          loop : false,
+          showCursor : false
+        })
+        // typeWriter();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>

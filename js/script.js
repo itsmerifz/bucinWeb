@@ -9,3 +9,9 @@ function getNama(){
     localStorage.setItem("nama", name);
 }
 
+function timeoutData() {
+    setTimeout(function(){
+        window.location.href = "whatsapp://open";
+    },82000)
+}
+

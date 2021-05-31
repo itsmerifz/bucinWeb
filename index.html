@@ -31,27 +31,47 @@
     <!-- Main -->
     <div class="main">
       <span id="ketikawal">Hallo, Silahkan isi namamu di bawah...</span>
-      <a href="#" class="btn btn-light" id="tombol">Klik Ini</a>
+      <button type="button" class="btn btn-light" id="btnAwl" data-toggle="modal" data-target="#tombol">
+        Klik ini
+      </button>
     </div>
 
-    <div class="popup">
-      <div class="popup-content">
-        <h5>Isi Namamu Ya</h5>
-        <input type="text" name="nama" id="mynama" placeholder="Nama Kamu">
-        <a href="status.html" class="btn btn-dark" onclick="getNama()">Lanjut</a>
+    <div class="modal fade" id="tombol" tabindex="-1" aria-labelledby="tombolLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tombolLabel">Isi namamu dulu yak</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="status.html" method="POST" name="form">
+              <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama" placeholder="Isi Nama Kamu..." required>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Kembali</button>
+            <button type="submit" class="btn btn-dark" onclick="getNama()">Lanjut</button>
+          </div>
+        </div>
       </div>
     </div>
 
+    <!-- <div class="popup">
+      <div class="popup-content">
+        <h5>Isi Namamu Ya</h5>
+        
+        <a href="status.html" class="btn btn-dark" onclick="getNama()">Lanjut</a>
+      </div>
+    </div> -->
 
-    <script src="js/script.js"></script>
-    <!-- <script>
-      var x = new Typed('#ketikawal',{
-        strings : ['Hallo, Silahkan isi namamu di bawah... '],
-        typeSpeed : 150,
-        showCursor : false
-      });
-    </script> -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
